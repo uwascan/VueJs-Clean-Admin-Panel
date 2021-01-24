@@ -1,6 +1,6 @@
-# clean-admin-panel
+# VueJs Clean Admin Panel
 
-**VueJs Admin Panel** is a clean starter project made with Bootstrap 5 in Vue Js.
+**VueJs Clean Admin Panel** is a clean starter project made with Bootstrap 5 in Vue Js.
 
 ### Included
 * vue-router
