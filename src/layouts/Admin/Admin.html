@@ -1,4 +1,4 @@
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+<header class="navbar sticky-top flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
@@ -15,42 +15,42 @@
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
             <div class="position-sticky pt-3">
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            <span data-feather="home"></span>
+                            <i class="fas fa-fw fa-home"></i>
                             Dashboard
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span data-feather="file"></span>
+                            <i class="far fa-fw fa-file-alt"></i>
                             Orders
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span data-feather="shopping-cart"></span>
+                            <i class="fas fa-fw fa-shopping-cart"></i>
                             Products
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span data-feather="users"></span>
+                            <i class="fas fa-fw fa-users"></i>
                             Customers
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span data-feather="bar-chart-2"></span>
+                            <i class="fas fa-fw fa-chart-bar"></i>
                             Reports
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <span data-feather="layers"></span>
+                            <i class="fas fa-fw fa-layer-group"></i>
                             Integrations
                         </a>
                     </li>
@@ -58,8 +58,14 @@
             </div>
         </nav>
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 primary-content">
             <slot/>
         </main>
+
+        <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 text-center mb-4">
+            <footer class="footer"
+                ><span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021 Company name. All rights reserved.</span>
+            </footer>
+        </div>
     </div>
 </div>
